@@ -343,13 +343,16 @@ const info= [{
 }]
 
 
-const filter= info.filter((item)=>{return item.subject.subjectName==="story"});
+const filter= info.filter(item =>item.subject.some(sub =>sub.subjectName==="Story"))
 console.log(filter);
 
 
 
+const string = "react code InterVIEw";
 
+const solution = string.toLowerCase().split(" ").map(str=>str.charAt(0).toUpperCase()+str.slice(1)).join(" ");
 
+console.log(solution);
 
 
 
