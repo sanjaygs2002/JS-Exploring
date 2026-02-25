@@ -348,11 +348,16 @@ console.log(filter);
 
 
 
-const string = "react code InterVIEw";
+// const string = "react code InterVIEw";
 
-const solution = string.toLowerCase().split(" ").map(str=>str.charAt(0).toUpperCase()+str.slice(1)).join(" ");
+// const solution = string.toLowerCase().split(" ").map(str=>str.charAt(0).toUpperCase()+str.slice(1)).join(" ");
 
-console.log(solution);
+// console.log(solution);
+
+
+
+
+
 
 
 
