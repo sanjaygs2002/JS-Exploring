@@ -314,7 +314,7 @@ for(let i=0;i<arrayElement.length;i++){
 }
 
 
-let str = "hello sanjay";
+let str = "hello sanjay InterVIEw";
 
 let results = str
   .split(" ").map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(" ");                     
@@ -353,6 +353,7 @@ console.log(filter);
 // const solution = string.toLowerCase().split(" ").map(str=>str.charAt(0).toUpperCase()+str.slice(1)).join(" ");
 
 // console.log(solution);
+
 
 
 

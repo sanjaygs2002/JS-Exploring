@@ -210,7 +210,6 @@ const students = Object.create(person);
 students.name = "Sanjay";
 
 students.greet(); 
-
 // student does not copy greet
 // it inherits via prototype chain
 
@@ -393,6 +392,30 @@ const child = {
 child.__proto__ = parent;
 
 child.greet();
+
+const apiurl={
+    name:"Sanjay",
+    age: 23,
+    getName(){
+        return `My name is ${this.name}`
+    }
+}
+
+console.log(apiurl.getName());
+
+
+function datas(name,callback){
+  
+   console.log(`Hi , hello my name is ${name}`);
+    callback();
+}
+
+function greet(){
+    console.log("Greeting"); 
+}
+datas("Sanjay",greet);
+
+
 
 
 
