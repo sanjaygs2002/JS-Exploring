@@ -174,9 +174,7 @@ const result = employees.reduce((acc, emp)=>{
         if(!acc[dept]){
            acc[dept]=[]; 
         }
-        acc[dept].push(name);
-
-
+        acc[dept].push(name)
 })
 
 return acc;
@@ -249,9 +247,9 @@ console.log(m.getSalary());
 console.log(m.getInfo());    
 
 
-
-
-
+let arr=[5,3,5,8,4,0,3];
+let res=arr.sort();
+console.log(res);
 
 
 
