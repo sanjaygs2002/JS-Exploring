@@ -173,6 +173,66 @@ const group = employees.reduce((acc,item)=>{
 
 console.log(group);
 
+///////////////////////////////////////////////////////////////////////////////////////////
+
+const products = [
+  {
+    id: 1,
+    name: "Laptop",
+    price: 800,
+    tags: ["electronics", "computer"],
+    reviews: [5, 4, 4]
+  },
+  {
+    id: 2,
+    name: "Phone",
+    price: 500,
+    tags: ["electronics"],
+    reviews: [4, 3]
+  },
+  {
+    id: 3,
+    name: "Shirt",
+    price: 50,
+    tags: ["clothing"],
+    reviews: [5, 5, 4]
+  }
+];
+
+// destructure
+
+products.forEach((item)=>{
+    console.log(Object.values(item));
+    
+})
+
+// Get unique tags
+
+const uniTag= products.filter((item)=>item.tags);
+console.log(uniTag);
+
+const students = [
+  {
+    name: "John",
+    marks: { math: 80, science: 70, english: 90 }
+  },
+  {
+    name: "Sara",
+    marks: { math: 60, science: 85, english: 75 }
+  }
+];
+
+const totmark = students.reduce((acc,item)=>acc+(item.marks.science+item.marks.english+item.marks.math));
+console.log(totmark);
+
+// Alternate solutions
+const altSol= students.map(item=>({name:item.name, marks:item.marks.science+item.marks.english+item.marks.math}));
+console.log(altSol);
+
+
+
+
+
 
 
 
