@@ -1,19 +1,19 @@
 // console.log("02-03-2026");
 
-// const arr = [
-//   { id: 1, name: "test user1", price: 20, fruit: ["apple", "mango"] },
-//   { id: 2, name: "test user2", price: 60, fruit: ["apple", "grapes"] },
-//   { id: 3, name: "test user3", price: 40, fruit: ["mango", "grapes"]  },
-// ]
+const arr = [
+  { id: 1, name: "test user1", price: 20, fruit: ["apple", "mango"] },
+  { id: 2, name: "test user2", price: 60, fruit: ["apple", "grapes"] },
+  { id: 3, name: "test user3", price: 40, fruit: ["mango", "grapes"]  },
+]
 
 // //////////////////////////////////////////////////////////////////////////////
 // const result = arr.filter((item)=>item.fruit.includes("apple") && item.price>50);
 // console.log(result);
 
-// ////////////////////////////////////////////////////////////////////////////////
-// arr.forEach((item)=>{
-//     console.log(Object.values(item)); 
-// })
+////////////////////////////////////////////////////////////////////////////////
+arr.forEach((item)=>{
+    console.log(Object.values(item)); 
+})
 
 // /////////////////////////////////////////////////////////////////////////////
 // const omit =arr.filter(item => item.id !== 1);
@@ -228,6 +228,34 @@ console.log(totmark);
 // Alternate solutions
 const altSol= students.map(item=>({name:item.name, marks:item.marks.science+item.marks.english+item.marks.math}));
 console.log(altSol);
+
+
+async function sol1(){
+    setTimeout(()=>{
+console.log("solution1");
+    },1000)
+    
+    
+}
+
+async function sol2(){
+    console.log("solution2");
+    
+}
+
+
+
+async function data(){
+    try{
+        const value1 = await sol1();
+     const value2 = await sol2();
+    }catch(err){
+        console.log("Error",err);
+        
+    }
+}
+data();
+
 
 
 
