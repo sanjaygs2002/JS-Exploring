@@ -93,4 +93,36 @@ console.log(uniqueskills);
 
 
 
+const users = [
+  {
+    id: 1,
+    name: "Sanjay",
+    address: {
+      city: "Chennai"
+    }
+  }
+];
+
+
+const [{name, ...rest}]=users;
+
+console.log(name);
+console.log(rest);
+
+
+const arr1 = [1, 2, 3];
+const arr2 = [...arr1,90,0];
+
+console.log(arr2); 
+
+
+
+const str = "JS";
+
+const arr = ["Script",...str];
+
+console.log(arr);
+
+
+
 

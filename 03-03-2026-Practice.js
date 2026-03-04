@@ -390,8 +390,19 @@ const students= [{
 }
 ]
 
-const result = students.filter((item)=>item.result==="pass");
-console.log(result);
+// const result = students.filter((item)=>item.id===1).map((item)=>item.name);
+// console.log(result);
+
+const reduced = students.reduce((acc,item)=>{
+        if(item.name==="Sanjay"){
+          return item.name;
+        }
+        return acc;
+},"")
+console.log(reduced);
+
+
+
 
 const solution = students.filter((item)=>item.name==="Ram").map((item)=>item.id);
 console.log(solution);
@@ -417,6 +428,30 @@ const reduce = students.reduce((acc,item)=>{
 },{})
 
 console.log(reduce);
+
+
+const users = [
+  {
+    id: 1,
+    name: "Sanjay",
+    address: {
+      city: "Chennai"
+    }
+  }
+];
+
+const [{id,address:{city}}]=users;
+console.log(id);
+
+console.log(city);
+
+
+
+
+
+
+
+
 
 
 
