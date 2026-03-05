@@ -140,10 +140,47 @@ const arr2 = [...arr1];
 
 arr2[2][0] = 100;
 arr2[0]=50;
-
-
 console.log(arr1);
 console.log(arr2);
+
+
+const userss = [
+ {
+  name:"Sanjay",
+  orders:[
+   {product:"Laptop",price:80000},
+   {product:"Mouse",price:500}
+  ]
+ },
+ {
+  name:"Rahul",
+  orders:[
+   {product:"Mobile",price:20000}
+  ]
+ }
+];
+
+const mock1= userss.map((item)=>{
+    const tot= item.orders.reduce((acc,item)=>{
+        return acc+ item.price
+    },0)
+    return {
+        name:item.name,
+        total:tot
+    }
+},[])
+
+console.log(mock1);
+
+const obj1 = { name: "Alice", details: { 
+age: 25 } }; 
+const obj2 = { ...obj1 }; 
+obj2.details.age = 30; 
+
+console.log(obj1);
+console.log(obj2);
+
+
 
 
 
