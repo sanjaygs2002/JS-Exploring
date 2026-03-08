@@ -286,6 +286,114 @@ const new15= students.flatMap(item=>item.marks).reduce((acc,item)=>{
 },{})
 console.log(new15);
 
+const customers = [
+{
+ id:1,
+ name:"Sanjay",
+ city:"Chennai",
+ orders:[
+   {product:"Laptop",price:80000,quantity:1,category:"Electronics"},
+   {product:"Mouse",price:500,quantity:2,category:"Electronics"}
+ ]
+},
+
+{
+ id:2,
+ name:"Rahul",
+ city:"Mumbai",
+ orders:[
+   {product:"Shoes",price:3000,quantity:1,category:"Fashion"},
+   {product:"Tshirt",price:1000,quantity:3,category:"Fashion"}
+ ]
+},
+
+{
+ id:3,
+ name:"Priya",
+ city:"Bangalore",
+ orders:[
+   {product:"Mobile",price:20000,quantity:1,category:"Electronics"},
+   {product:"Headphones",price:2000,quantity:2,category:"Electronics"}
+ ]
+},
+
+{
+ id:4,
+ name:"Arun",
+ city:"Chennai",
+ orders:[
+   {product:"Watch",price:5000,quantity:1,category:"Fashion"},
+   {product:"Laptop",price:90000,quantity:1,category:"Electronics"}
+ ]
+}
+];
+
+const ans1= customers.map(item=>item.name);
+console.log(ans1);
+ 
+const ans2= customers.filter(item=>item.city==="Chennai").map(item=>item.name);
+console.log(ans2);
+
+const ans3= customers.flatMap(item=>item.orders).map(item=>item.product);
+console.log(ans3);
+
+const ans4= [
+  ...new Set (
+    customers.flatMap(item=>item.orders).map(item=>item.product)
+  )
+]
+console.log(ans4);
+
+const ans5= customers.map(item=>{
+  
+  return{
+    name:item.name,
+    total: item.orders.reduce((acc,item)=>{
+    return acc+item.price
+  },0)
+  }
+})
+
+console.log(ans5.filter(item=>item.total>50000).map(item=>item.name));
+
+const ans7= customers.flatMap(item=>item.orders.reduce((acc,item)=>{
+  return acc+item.price
+},0));
+console.log(ans7)
+
+const reduce= ans7.reduce((acc,item)=>{
+  return acc+item
+},0)
+console.log(reduce);
+
+const ans8 = customers.flatMap(item=>item.orders.map(item=>{
+  return{
+    product:item.product,
+    price:item.price
+  }
+}))
+console.log(ans8);
+
+const ans9= customers.reduce((acc,item)=>{
+  return item.orders>acc.orders?item:acc
+})
+console.log(ans9);
+
+const ans11= customers.flatMap(item=>item.name).filter(item=>item.includes(item=>item))
+console.log(ans11);
+
+const ans14= customers.flatMap(item=>item.orders.reduce((acc,item)=>{
+  return acc+item.quantity
+},0));
+console.log(ans14.reduce((acc,item)=>{
+  return acc+item
+},0));
+
+
+
+
+
+
 
 
 
