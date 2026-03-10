@@ -95,17 +95,15 @@
 // },{})
 // console.log(red);
 
-// const arr3= [1,2,34,5,6,]
+const arr3= [1,2,34,5,6,]
 
 // const somSolution = arr3.some(item=>item===""); // false
 // const alter = arr3.some(item=>item); // true
 // console.log(somSolution);
 
 
-// const filSolution = arr3.find(item=>item); // return 1st element or value
-// console.log(filSolution);
-
-
+const filSolution = arr3.find(item=>{}); // return 1st element or value
+console.log(filSolution);
 
 //     axios.interceptors.response.use(response=>response,error=>{
 //         if (error.response && error.response.status===401){
@@ -140,6 +138,8 @@ console.log(pat2.test("Sanjay"));
 
 const pat3= /^[A-Z]{4}[\d]{4}&/;
 console.log(pat3.test("Test1234"));
+
+
 
 
 
