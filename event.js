@@ -10,6 +10,11 @@
         console.log("mouse enter the page");
     });
 
+document.getElementById("heading").addEventListener("mouseout",function(){
+    console.log("Mouse leave");
+    
+})
+
     document.addEventListener("keydown", function(event){
     console.log(event.key);
 });
@@ -36,3 +41,4 @@ window.addEventListener("scroll", function(){
 window.addEventListener("resize", function(){
     console.log("Window resized");
 });
+
