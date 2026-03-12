@@ -337,8 +337,6 @@ console.log(ques9);
 // document.cookie = "age=21; path=/";
 // 'age=21; path=/'
 
-
-
 axios.interceptors.response.use(
   response => {
     console.log("Response received:", response.status);
@@ -365,12 +363,9 @@ console.table(users);
 // email validation
 
 const pattern = "sanjay@gmail.com"
-
 const resPat = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
 console.log(resPat.test(pattern));
-
 const str = "Hello my Name is Sanjay from Chennai";
-
 console.log(str.match(/\b[A-Z][a-z]*\b/g));
 
 
