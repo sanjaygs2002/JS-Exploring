@@ -248,8 +248,17 @@ console.log(rest)
 // Promise
 // async and await
 
-
-
+let promise= new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+         fetch("http://jsonplaceholder.typicode.com/users")
+        .then(res=>res.json())
+        .then(data=>resolve(data))
+        .catch(err=>reject(err))
+    },1000)
+})
+promise.then(res=>console.log(res)
+).catch(err=>console.log(err)
+)
 
 
 
