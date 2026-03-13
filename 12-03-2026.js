@@ -298,8 +298,79 @@ function add(n){
 const number=add(8);
 console.log(number(9));
 
+const employees = [
+{
+  id:1,
+  name:"Sanjay",
+  department:"IT",
+  salary:60000,
+  skills:["JavaScript","React","Node"],
+  projects:[
+    {title:"Ecommerce",status:"completed",hours:120},
+    {title:"Chat App",status:"in-progress",hours:60}
+  ],
+  address:{
+    city:"Chennai",
+    pincode:600001
+  }
+},
 
+{
+  id:2,
+  name:"Rahul",
+  department:"IT",
+  salary:55000,
+  skills:["JavaScript","Angular"],
+  projects:[
+    {title:"Banking System",status:"completed",hours:150},
+    {title:"Portfolio Site",status:"completed",hours:40}
+  ],
+  address:{
+    city:"Bangalore",
+    pincode:560001
+  }
+},
 
+{
+  id:3,
+  name:"Priya",
+  department:"HR",
+  salary:45000,
+  skills:["Communication","Management"],
+  projects:[
+    {title:"Recruitment Portal",status:"completed",hours:80}
+  ],
+  address:{
+    city:"Chennai",
+    pincode:600010
+  }
+},
+
+{
+  id:4,
+  name:"Arun",
+  department:"IT",
+  salary:70000,
+  skills:["Java","Spring","Microservices"],
+  projects:[
+    {title:"AI Chatbot",status:"completed",hours:200},
+    {title:"Payment Gateway",status:"completed",hours:150}
+  ],
+  address:{
+    city:"Hyderabad",
+    pincode:500001
+  }
+}
+];
+
+const arr = [
+  { id: 1, name: "test user1", price: 20, fruit: ["apple", "mango"] },
+  { id: 2, name: "test user2", price: 60, fruit: ["apple", "grapes"] },
+  { id: 3, name: "test user3", price: 40, fruit: ["mango", "grapes"]  },
+]
+
+const res= arr.filter(item=>item.fruit.includes("apple") && item.price>50);
+console.log(res);
 
 
 

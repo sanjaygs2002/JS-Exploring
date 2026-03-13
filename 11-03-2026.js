@@ -126,14 +126,6 @@ console.log(result1); // true
 
 // Practice
 
-const ques1= 
-        customers.reduce((acc,item)=>{
-            acc[item.orders.some(item=>item.category==="Electronics")]=(acc[item.orders.some(item=>item.category==="Electronics")]) || [];
-            acc[item.orders.some(item=>item.category==="Electronics")].push(item.name);
-            return acc;
-        },{})
-console.log(ques1);
-
 const ques2= customers.filter(item=>item.orders.some(item=>item.category==="Electronics")).map(item=>item.name);
 console.log(ques2);
 
