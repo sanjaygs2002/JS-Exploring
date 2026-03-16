@@ -42,3 +42,6 @@ window.addEventListener("resize", function(){
     console.log("Window resized");
 });
 
+document.getElementById("myname").addEventListener("click", function(){
+    alert("Hi this is my name");
+})
