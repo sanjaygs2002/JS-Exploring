@@ -49,6 +49,24 @@ return null;
 }
 console.log(findPair(intArr,target));
 
+function Member(name){
+    this.name=name
+}
+Member.prototype.greet=function(){
+    console.log(`${this.name} Welcome`);
+}
+const member= new Member("Sanjay")
+member.greet();
+
+// /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&]){8,}$/
+
+const pattern= /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&]).{8,}$/
+
+const check= "Sanjay@7542"
+console.log(pattern.test(check));
+
+
+
 
 
 
